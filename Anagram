@@ -1,0 +1,27 @@
+//I am not the author of this code. This code came from JavaConceptofTheDay. This is for educational purposes only
+  Public class Anagram{
+    Static void isAnagram (string s1, string s2){
+    //Removing all white spaces from s1 and s2
+    string copyDFS1 = S1.replaceAll("\\s"," ");
+    string copyDFS2 = S2.replaceAll("\\s"," ");
+    //initially setting status as true
+    boolean status = true;  
+    if (copyDFS1.length() != CopyDFS2.length()){
+    //setting status as false if copyDFS1 and copyDFS2 does not have the same length
+    status = false;
+    }
+    else{
+    //changing the case of characters of both copyDFS and CopyDFS2 and convert
+    char[]S1Array = copyDFS1.toLowerCase().toCharArray();
+    char[]S2Array = copyDFS2.toLowerCase().toCharArray();
+    //Sorting both S1Array and S2Array
+    Arrays.sort(S1Array);
+    Arrays.sort(S2Array);
+    //checking whether S1Array and S2Array are equal
+    status = Arrays.equals (S1Array, S2Arracy);
+    }
+    if(status){
+    system.out.println(S1 + "and "+S2+" are anagrams");
+    system.out.println(S1 + "and "+S2+" are not anagrams");
+    }
+    {
